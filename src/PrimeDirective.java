@@ -1,10 +1,18 @@
 package src;
 
-// Import statement:
+import java.util.ArrayList;
+
 
 class PrimeDirective {
 
-    // Add your methods here:
+    public boolean isPrime(int number) {
+        for (int i = 2; i < number; i++)
+            if (number < 2 || number % i == 0) {
+                return false;
+            }
+        return true;
+    }
+
 
 
     public static void main(String[] args) {
