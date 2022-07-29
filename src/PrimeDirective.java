@@ -2,17 +2,22 @@ package src;
 
 import java.util.ArrayList;
 
-
 class PrimeDirective {
 
     public boolean isPrime(int number) {
+
+        if (number == 2) {
+            return true;
+        } else if (number<2) {
+            return false;
+        }
+
         for (int i = 2; i < number; i++)
             if (number < 2 || number % i == 0) {
                 return false;
             }
         return true;
     }
-
 
 
     public static void main(String[] args) {
